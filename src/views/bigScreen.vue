@@ -8,7 +8,10 @@
         <span class="angle3"></span>
         <span class="angle4"></span>
         <div class="left1">
-          <double-area :selectRangeDate="selectRangeDate" ref='chart1'></double-area>
+          <double-area
+            :selectRangeDate="selectRangeDate"
+            ref="chart1"
+          ></double-area>
         </div>
         <div class="left2">
           <!-- <test></test> -->
@@ -24,101 +27,97 @@
           </div>
         </div>
       </el-col>
-      <el-col :span="10">
-        echarts部分
-      </el-col>
+      <el-col :span="10"> echarts部分 </el-col>
       <el-col :span="7">
         <div class="rigtTop-1">
-          <span class='title'><span class="title-8">世界地图分析</span></span>
-            <span class="angle1"></span>
-            <span class="angle2"></span>
-            <span class="angle3"></span>
-            <span class="angle4"></span>
-            111
-            <world-map ref="chart7"></world-map>
+          <span class="title"><span class="title-8">世界地图分析</span></span>
+          <span class="angle1"></span>
+          <span class="angle2"></span>
+          <span class="angle3"></span>
+          <span class="angle4"></span>
+          111
+          <world-map ref="chart7"></world-map>
         </div>
         <div class="rightTop-2">
-          <span class='title'><span class="title-6">模块六分析</span></span>
+          <span class="title"><span class="title-6">模块六分析</span></span>
           <span class="angle1"></span>
           <span class="angle2"></span>
           <span class="angle3"></span>
           <span class="angle4"></span>
           <div class="rightTop-list">
             <div class="list">
-                <!-- <popular-bar ref="chart8"></popular-bar> -->
+              <!-- <popular-bar ref="chart8"></popular-bar> -->
             </div>
             <div class="list">
-                <!-- <ring ref="chart9" :data="data5"></ring> -->
+              <!-- <ring ref="chart9" :data="data5"></ring> -->
             </div>
             <div class="list">
-                <!-- <ring ref="chart10" :data="data6"></ring> -->
+              <!-- <ring ref="chart10" :data="data6"></ring> -->
             </div>
           </div>
         </div>
       </el-col>
-      </el-col>
     </el-row>
-            <el-row class="listBottom">
-            <el-col :span='9'>
-                <div class="content">
-                    <span class="title"><span class="title-6">模块二分析</span></span>
-                    <span class="angle1"></span>
-                    <span class="angle2"></span>
-                    <span class="angle3"></span>
-                    <span class="angle4"></span>
-                    <el-row class="topLine">
-                        <el-col :span="24">
-                            <!-- <lines ref="chart11"></lines> -->
-                        </el-col>
-                    </el-row>
-                    <el-row class="bottomPie">
-                        <el-col :span="12">
-                            <!-- <pie-ring ref="chart12" :data="data7"></pie-ring> -->
-                        </el-col>
-                        <el-col :span="12">
-                            <!-- <pie-ring ref="chart13" :data="data8"></pie-ring> -->
-                        </el-col>
-                    </el-row>
-                </div>
+    <el-row class="listBottom">
+      <el-col :span="9">
+        <div class="content">
+          <span class="title"><span class="title-6">模块二分析</span></span>
+          <span class="angle1"></span>
+          <span class="angle2"></span>
+          <span class="angle3"></span>
+          <span class="angle4"></span>
+          <el-row class="topLine">
+            <el-col :span="24">
+              <!-- <lines ref="chart11"></lines> -->
             </el-col>
-            <el-col :span='4'>
-                <div class="content">
-                    <span class="title"><span class="title-6">模块三分析</span></span>
-                    <span class="angle1"></span>
-                    <span class="angle2"></span>
-                    <span class="angle3"></span>
-                    <span class="angle4"></span>
-                    <div class="behavior">
-                        <!-- <area-chart style="height: 55%" ref="chart14" :select-range-date="selectRangeDate"
+          </el-row>
+          <el-row class="bottomPie">
+            <el-col :span="12">
+              <!-- <pie-ring ref="chart12" :data="data7"></pie-ring> -->
+            </el-col>
+            <el-col :span="12">
+              <!-- <pie-ring ref="chart13" :data="data8"></pie-ring> -->
+            </el-col>
+          </el-row>
+        </div>
+      </el-col>
+      <el-col :span="4">
+        <div class="content">
+          <span class="title"><span class="title-6">模块三分析</span></span>
+          <span class="angle1"></span>
+          <span class="angle2"></span>
+          <span class="angle3"></span>
+          <span class="angle4"></span>
+          <div class="behavior">
+            <!-- <area-chart style="height: 55%" ref="chart14" :select-range-date="selectRangeDate"
                                     :config="configData9"></area-chart>
                         <colors-bar ref="chart15" :data="colorsData"></colors-bar> -->
-                    </div>
-                </div>
-            </el-col>
-            <el-col :span='4'>
-                <div class="content">
-                    <span class="angle1"></span>
-                    <span class="angle2"></span>
-                    <span class="angle3"></span>
-                    <span class="angle4"></span>
-                    <span class="title"><span class="title-6">模块四分析</span></span>
-                    <!-- <funnel ref="chart16"></funnel> -->
-                </div>
-            </el-col>
-            <el-col :span='7'>
-                <div class="content">
-                    <span class="title"><span class="title-6">模块五分析</span></span>
-                    <span class="angle1"></span>
-                    <span class="angle2"></span>
-                    <span class="angle3"></span>
-                    <span class="angle4"></span>
-                    <div class="appUse">
-                        <!-- <line-bar ref="chart17"></line-bar> -->
-                    </div>
-                </div>
-            </el-col>
-        </el-row>
-    </div>
+          </div>
+        </div>
+      </el-col>
+      <el-col :span="4">
+        <div class="content">
+          <span class="angle1"></span>
+          <span class="angle2"></span>
+          <span class="angle3"></span>
+          <span class="angle4"></span>
+          <span class="title"><span class="title-6">模块四分析</span></span>
+          <!-- <funnel ref="chart16"></funnel> -->
+        </div>
+      </el-col>
+      <el-col :span="7">
+        <div class="content">
+          <span class="title"><span class="title-6">模块五分析</span></span>
+          <span class="angle1"></span>
+          <span class="angle2"></span>
+          <span class="angle3"></span>
+          <span class="angle4"></span>
+          <div class="appUse">
+            <!-- <line-bar ref="chart17"></line-bar> -->
+          </div>
+        </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
